@@ -83,7 +83,7 @@
 	
 	<?php 
 	if (isset($_POST['submit'])){
-		$lol = "http://localhost/fyp/test.py";
+		$lol = "http://testfyp.herokuapp.com/test.py";
 		$hi = file_get_contents($lol);
 		echo $hi;
 	}
