@@ -83,9 +83,9 @@
 	
 	<?php 
 	if (isset($_POST['submit'])){
-		$lol = "http://testfyp.herokuapp.com/test.py";
-		$hi = file_get_contents($lol);
-		echo $hi;
+		$command = escapeshellcmd('http://testfyp.herokuapp.com/test.py');
+		$output = shell_exec($command);
+		echo $output;
 	}
 	?>
 	<script>
