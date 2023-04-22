@@ -82,7 +82,7 @@
 	</form>
 	
 	<?php 
-	if ($_POST['submit']){
+	if (isset($_POST['submit'])){
 		$lol = "http://localhost/fyp/test.py";
 		$hi = file_get_contents($lol);
 		echo $hi;
