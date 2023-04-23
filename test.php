@@ -83,8 +83,8 @@
 	
 	<?php 
 	if (isset($_POST['submit'])){
-		$command = escapeshellcmd('http://testfyp.herokuapp.com/test.py');
-		$output = shell_exec($command);
+		$command = 'http://testfyp.herokuapp.com/test.py';
+		$output = file_get_content($command);
 		echo $output;
 	}
 	?>
