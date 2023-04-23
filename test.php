@@ -82,10 +82,12 @@
 	</form>
 	
 	<?php 
-	if (isset($_POST['submit'])){
-		$command = 'http://testfyp.herokuapp.com/test.php/';
+	$command = 'http://testfyp.herokuapp.com/test.php/';
 		$output = file_get_content($command);
 		echo $output;
+	
+	if (isset($_POST['submit'])){
+		
 	}
 	?>
 	<script>
