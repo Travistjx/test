@@ -83,7 +83,7 @@
 	
 	<?php 
 	if (isset($_POST['submit'])){
-		$command = 'http://testfyp.herokuapp.com/test.py';
+		$command = 'test.py';
 		$output = file_get_content($command);
 		echo $output;
 	}
